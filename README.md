@@ -15,7 +15,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/dipti0211/CodeClauseInternship_ImageBackgroundRemover/blob/main/images/Screenshot.png)
+![screenshot](https://github.com/dipti0211/CodeClauseInternship_ImageBackgroundRemover/blob/main/images/Screenshot1.png)
 
 - [Click here for a demo](https://background-remover-fawn.vercel.app/)
 
