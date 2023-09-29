@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG ROOM</title>
+    <link rel="icon" href="./images/bg-icon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Notification modal -->
+
+    <div class="notifications">
+    </div>
+
+    <!-- Navbar -->
+
+    <nav>
+        <div>
+            <div class="nav_content">
+                <img src="./images/bg-icon.svg" alt="" class="brand">
+                <h2 class="nav_title">
+                    BG-ROOM
+                </h2>
+            </div>
+
+            <div class="mode">
+                <div class="mode_circle left">
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="rm_container">
+        <div>
+            <!-- Title Heading -->
+            <div class="title_section">
+                <div>
+                    <h1 class="heading">
+                        <span>
+                            Remove Background
+                        </span>
+                    </h1>
+                    <div class="sub_heading">
+                        The <span>
+                            Most Accurate & Free
+                        </span> background remover tool. Just drag and drop or select the image.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drop Content area -->
+            <div class="rm_mainContent">
+                <div class="rm_subContent">
+                    <div>
+                        <div class="content_start">
+                            <div>
+
+                                <input type="file" accept="image/jpg,image/png,image/jpeg" class="hidden"
+                                    aria-hidden="true">
+                                <button id="btn" class="btn">
+                                    <div>
+                                        <i class="fa-solid fa-images"></i>
+                                        <span>
+                                            Start from a photo
+                                        </span>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="content_end">
+                                Or Drop an image here
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Try Part -->
+                <div class="rm_subContent1">
+                    <div>
+                        <div class="content_start1">
+                            <div class="text_content">
+                                Try with one of these.
+                            </div>
+                            <div class="image_content">
+                                <button class="btn_img_1">
+                                    <img loading="lazy" width="48" height="48" decoding="async" data-nimg="1"
+                                        style="color: transparent;"
+                                        src="https://static.fotor.com/app/features/static/media/2_s.55f9a9f0.jpg"
+                                        alt="product">
+                                </button>
+                                <button class="btn_img_2">
+                                    <img loading="lazy" width="48" height="48" decoding="async" data-nimg="1"
+                                        style="color: transparent;"
+                                        src="https://static.fotor.com/app/features/static/media/1_s.6a3e7328.jpg"
+                                        alt="portrait image">
+                                </button>
+                                <button class="btn_img_3">
+                                    <img alt loading="lazy" width="48" height="48" decoding="async" data-nimg="1"
+                                        style="color: transparent;" src="./images/girl2.png">
+                                </button>
+                                <button class="btn_img_4">
+                                    <img alt loading="lazy" width="48" height="48" decoding="async" data-nimg="1"
+                                        style="color: transparent;" src="./images/girl1.jpg">
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- After image Upload -->
+            <div id="hidden" style="display: none;">
+                <div class="rm_imageUp_mainContent">
+                    <div class="rm_imageUp_subContent">
+                        <div>
+                            <div class="rm_imageUp_contentStart">
+                                <div class="rm_imageUp_content" id="img_before">
+                                    <!-- Original img -->
+                                </div>
+                                <div class="rm_imageUp_content" id="img_after">
+                                    <!-- bgremove img -->
+
+                                    <div class="loader">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+                                            height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;"
+                                            xml:space="preserve">
+                                            <rect x="0" y="0" width="4" height="10" fill="#333">
+                                                <animateTransform attributeType="xml" attributeName="transform"
+                                                    type="translate" values="0 0; 0 20; 0 0" begin="0" dur="0.6s"
+                                                    repeatCount="indefinite" />
+                                            </rect>
+                                            <rect x="10" y="0" width="4" height="10" fill="#333">
+                                                <animateTransform attributeType="xml" attributeName="transform"
+                                                    type="translate" values="0 0; 0 20; 0 0" begin="0.2s" dur="0.6s"
+                                                    repeatCount="indefinite" />
+                                            </rect>
+                                            <rect x="20" y="0" width="4" height="10" fill="#333">
+                                                <animateTransform attributeType="xml" attributeName="transform"
+                                                    type="translate" values="0 0; 0 20; 0 0" begin="0.4s" dur="0.6s"
+                                                    repeatCount="indefinite" />
+                                            </rect>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="rm_img_text">
+                    <div>
+                        <div class="rm_img_before">
+                            Before
+                        </div>
+                        <div class="rm_img_after">
+                            After
+
+                            <button type="button" class="download" data-download="resultImg">
+                                <i class="fa-solid fa-download">
+                                </i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="rm_img_button">
+                    <div>
+                        <button type="button" class="btn" id="try_btn">
+                            <div>
+                                <i class="fa-solid fa-repeat"></i>
+                                <span>Try Another</span>
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
